@@ -5,7 +5,6 @@ import UserCard from "@/components/UserCard";
 
 export default async function ClientPage() {
   const session = await getServerSession(options);
-  console.log(session?.user);
   return (
     <>
       {session ? (

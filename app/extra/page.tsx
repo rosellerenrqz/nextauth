@@ -5,11 +5,10 @@ import UserCard from "@/components/UserCard";
 
 export default async function ExtraPage() {
   const session = await getServerSession(options);
-  console.log(session?.user);
   return (
     <>
       {session ? (
-        <UserCard user={session?.user} pagetype={"Client"} />
+        <UserCard user={session?.user} pagetype={"Extra"} />
       ) : (
         <div>test</div>
       )}
